@@ -19,19 +19,116 @@
 				<div class="planned">Tervezett ár:<span>2 450 000 Ft</span></div>
 				<div class="real">Állami támogatás:<span>1 230 000 Ft</span></div>
 			</div>
-			<div class="svg"></div>
+			<div class="svg">ESVÉGÉ</div>
 		</div>
 		<div class="right">
 			<div class="tab-nav">
-				<a data-id="1" href="#">Helyiség</a>
-				<a data-id="2" href="#">Berendezések</a>
-				<a data-id="3" href="#">Gépek</a>
+				<a class="active" data-id="tab-1" href="#">Helyiség</a>
+				<a data-id="tab-2" href="#">Berendezések</a>
+				<a data-id="tab-3" href="#">Gépek</a>
 			</div>
-			<div class="box"></div>
+			<div class="boxes">
+				<div class="tab-1">
+					<?php for ($i=0; $i < 10; $i++) {
+					?>
+					<div class="box">
+					<div class="choosen"></div>
+						<div class="icon">
+							<img src="/<?php echo $this->config->rootDir; ?>/upload/images/choose/1.png" alt="1">
+						</div>
+						<div class="info">
+							<div class="name">Beépíthető <span>hűtőgép</span></div>
+							<div class="price-category">Árkategória:</div>
+							<div class="switcher">
+								<a href="#">Alsó</a>
+								<a href="#">Közép</a>
+								<a href="#">Felső</a>
+							</div>
+						</div>
+						<div class="colors clear">
+							<h4>Szín:</h4>
+							<ul>
+								<li><a class="green" href="#"></a></li>
+								<li><a class="green" href="#"></a></li>
+								<li><a class="pink" href="#"></a></li>
+								<li><a class="green" href="#"></a></li>
+								<li><a class="pink" href="#"></a></li>
+								<li><a class="green" href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+					<?php
+					} ?>
+				</div>
+				<div class="tab-2">
+						<?php for ($i=0; $i < 10; $i++) {
+					?>
+					<div class="box">
+					<div class="choosen"></div>
+						<div class="icon">
+							<img src="/<?php echo $this->config->rootDir; ?>/upload/images/choose/1.png" alt="1">
+						</div>
+						<div class="info">
+							<div class="name">Beépíthető <span>Mikrohullás sütő</span></div>
+							<div class="price-category">Árkategória:</div>
+							<div class="switcher">
+								<a href="#">Alsó</a>
+								<a href="#">Közép</a>
+								<a href="#">Felső</a>
+							</div>
+						</div>
+						<div class="colors clear">
+							<h4>Szín:</h4>
+							<ul>
+								<li><a class="green" href="#"></a></li>
+								<li><a class="green" href="#"></a></li>
+								<li><a class="pink" href="#"></a></li>
+								<li><a class="green" href="#"></a></li>
+								<li><a class="pink" href="#"></a></li>
+								<li><a class="green" href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+					<?php
+					} ?>
+				</div>
+				<div class="tab-3">
+						<?php for ($i=0; $i < 10; $i++) {
+					?>
+					<div class="box">
+					<div class="choosen"></div>
+						<div class="icon">
+							<img src="/<?php echo $this->config->rootDir; ?>/upload/images/choose/1.png" alt="1">
+						</div>
+						<div class="info">
+							<div class="name">Beépíthető <span>Főzőlap</span></div>
+							<div class="price-category">Árkategória:</div>
+							<div class="switcher">
+								<a href="#">Alsó</a>
+								<a href="#">Közép</a>
+								<a href="#">Felső</a>
+							</div>
+						</div>
+						<div class="colors clear">
+							<h4>Szín:</h4>
+							<ul>
+								<li><a class="green" href="#"></a></li>
+								<li><a class="green" href="#"></a></li>
+								<li><a class="pink" href="#"></a></li>
+								<li><a class="green" href="#"></a></li>
+								<li><a class="pink" href="#"></a></li>
+								<li><a class="green" href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+					<?php
+					} ?>
+				</div>
+			</div>
 			<div class="buttons">
 				<a class="btn-ghost" href="#">Mentés</a>
 				<a class="btn-ghost" href="#">Új helyiség</a>
-				<a class="btn-blue" href="#">Kész</a>
+				<a class="btn-blue" href="/lakastakarek/kalkulacio">Kész</a>
 			</div>
 		</div>
 	</div>

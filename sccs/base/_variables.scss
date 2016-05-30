@@ -2,16 +2,21 @@
 @font-face {
     font-family: 'senticosansdtregular';
     src: url('../fonts/senticosansdt-regular-webfont.woff2') format('woff2'),
-         url('../fonts/senticosansdt-regular-webfont.woff') format('woff');
+         url('../fonts/senticosansdt-regular-webfont.woff') format('woff'),
+         url('../fonts/senticosansdt-regular-webfont.ttf') format('truetype'),
+         url('../fonts/senticosansdt-regular-webfont.svg#senticosansdtregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
+
 @font-face {
     font-family: 'senticosansdtmedium';
     src: url('../fonts/senticosansdt-medium-webfont.woff2') format('woff2'),
-         url('../fonts/senticosansdt-medium-webfont.woff') format('woff');
+         url('../fonts/senticosansdt-medium-webfont.woff') format('woff'),
+         url('../fonts/senticosansdt-medium-webfont.ttf') format('truetype'),
+         url('../fonts/senticosansdt-medium-webfont.svg#senticosansdtmedium') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -20,7 +25,9 @@
 @font-face {
     font-family: 'senticosansdtbold';
     src: url('../fonts/senticosansdt-bold-webfont.woff2') format('woff2'),
-         url('../fonts/senticosansdt-bold-webfont.woff') format('woff');
+         url('../fonts/senticosansdt-bold-webfont.woff') format('woff'),
+         url('../fonts/senticosansdt-bold-webfont.ttf') format('truetype'),
+         url('../fonts/senticosansdt-bold-webfont.svg#senticosansdtbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -29,7 +36,9 @@
 @font-face {
     font-family: 'senticosansdtmedium_italic';
     src: url('../fonts/senticosansdt-mediumitalic-webfont.woff2') format('woff2'),
-         url('../fonts/senticosansdt-mediumitalic-webfont.woff') format('woff');
+         url('../fonts/senticosansdt-mediumitalic-webfont.woff') format('woff'),
+         url('../fonts/senticosansdt-mediumitalic-webfont.ttf') format('truetype'),
+         url('../fonts/senticosansdt-mediumitalic-webfont.svg#senticosansdtmedium_italic') format('svg');
     font-weight: normal;
     font-style: normal;
 

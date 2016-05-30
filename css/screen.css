@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'senticosansdtregular';
-  src: url("../fonts/senticosansdt-regular-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-regular-webfont.woff") format("woff");
+  src: url("../fonts/senticosansdt-regular-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-regular-webfont.woff") format("woff"), url("../fonts/senticosansdt-regular-webfont.ttf") format("truetype"), url("../fonts/senticosansdt-regular-webfont.svg#senticosansdtregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'senticosansdtmedium';
-  src: url("../fonts/senticosansdt-medium-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-medium-webfont.woff") format("woff");
+  src: url("../fonts/senticosansdt-medium-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-medium-webfont.woff") format("woff"), url("../fonts/senticosansdt-medium-webfont.ttf") format("truetype"), url("../fonts/senticosansdt-medium-webfont.svg#senticosansdtmedium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'senticosansdtbold';
-  src: url("../fonts/senticosansdt-bold-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-bold-webfont.woff") format("woff");
+  src: url("../fonts/senticosansdt-bold-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-bold-webfont.woff") format("woff"), url("../fonts/senticosansdt-bold-webfont.ttf") format("truetype"), url("../fonts/senticosansdt-bold-webfont.svg#senticosansdtbold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'senticosansdtmedium_italic';
-  src: url("../fonts/senticosansdt-mediumitalic-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-mediumitalic-webfont.woff") format("woff");
+  src: url("../fonts/senticosansdt-mediumitalic-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-mediumitalic-webfont.woff") format("woff"), url("../fonts/senticosansdt-mediumitalic-webfont.ttf") format("truetype"), url("../fonts/senticosansdt-mediumitalic-webfont.svg#senticosansdtmedium_italic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -379,6 +379,7 @@ header .logo {
   margin: 37px auto 0;
 }
 
+/* SIZE */
 .size .navigation {
   margin-top: 19px;
 }
@@ -438,28 +439,28 @@ header .logo {
   bottom: -37px;
 }
 
-.size .sizes > div.active {
+.size .sizes .active {
   margin-top: -15px;
 }
 
-.size .sizes > div.active:after {
+.size .sizes .active:after {
   bottom: -37px;
 }
 
-.size .sizes > div.active .bubble {
+.size .sizes .active .bubble {
   background: url("../images/size/selected.png") no-repeat center;
   color: #fff;
 }
 
-.size .sizes > div.active.small {
+.size .sizes .active.small {
   background: url("../images/size/house-1.png") no-repeat center bottom;
 }
 
-.size .sizes > div.active.medium {
+.size .sizes .active.medium {
   background: url("../images/size/house-2.png") no-repeat center bottom;
 }
 
-.size .sizes > div.active.large {
+.size .sizes .active.large {
   background: url("../images/size/house-3.png") no-repeat center bottom;
 }
 
@@ -530,6 +531,7 @@ header .logo {
   font-size: 12px;
 }
 
+/* AREA */
 .area .navigation {
   margin-top: 19px;
 }
@@ -695,6 +697,7 @@ header .logo {
   margin-right: 0;
 }
 
+/* CHOOSE */
 .choose .navigation {
   margin-top: 19px;
 }
@@ -730,16 +733,233 @@ header .logo {
 }
 
 .choose .left, .choose .right {
-  float: left;
   margin-top: 20px;
+  padding-bottom: 50px;
 }
 
 .choose .left {
   width: 50%;
+  float: left;
 }
 
 .choose .right {
   width: 480px;
+  height: 484px;
+  float: right;
+  position: relative;
+  margin-top: 80px;
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+  border: solid 1px #d8e2e6;
+}
+
+.choose .tab-nav {
+  position: absolute;
+  top: -60px;
+  height: 60px;
+  left: -1px;
+  font-family: "senticosansdtmedium";
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.choose .tab-nav a {
+  display: inline-block;
+  height: inherit;
+  color: #90a4ae;
+}
+
+.choose .tab-nav a:first-child {
+  width: 126px;
+}
+
+.choose .tab-nav a:nth-child(2) {
+  width: 160px;
+}
+
+.choose .tab-nav a:last-child {
+  width: 109px;
+}
+
+.choose .tab-nav a.active {
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  border: solid 1px #d8e2e6;
+  border-bottom: 0;
+}
+
+.choose .boxes {
+  height: 390px;
+  overflow: auto;
+  margin-bottom: -15px;
+}
+
+.choose .boxes > div {
+  display: none;
+}
+
+.choose .boxes > div:first-child {
+  display: block;
+}
+
+.choose .box {
+  padding: 15px 0 15px 31px;
+  box-shadow: 0 1px #eceff1;
+  position: relative;
+}
+
+.choose .icon {
+  width: 48px;
+  text-align: center;
+  float: left;
+  margin-right: 30px;
+}
+
+.choose .name {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.choose .name span {
+  font-family: "senticosansdtmedium";
+  color: #0077c9;
+}
+
+.choose .price-category {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.choose .info {
+  float: left;
+  width: 335px;
+}
+
+.choose .choosen {
+  width: 22px;
+  height: 16px;
+  background: url("../images/choose/done.png") no-repeat center;
+  position: absolute;
+  right: 30px;
+  top: 50px;
+}
+
+.choose .switcher {
+  margin-bottom: 20px;
+}
+
+.choose .switcher a {
+  display: inline-block;
+  width: 70px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: solid 1px #cfd8dc;
+  color: #555;
+  text-align: center;
+  line-height: 32px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.choose .switcher a:last-child {
+  margin-right: 0;
+}
+
+.choose .switcher a.active {
+  background-color: #007ac3;
+  color: #fff;
+  border: 1px solid #007ac3;
+}
+
+.choose h4 {
+  font-family: "senticosansdtmedium";
+  font-size: 18px;
+  float: left;
+  padding: 9px 57px 0 0;
+}
+
+.choose .colors {
+  text-align: center;
+}
+
+.choose .colors ul {
+  height: 40px;
+  float: left;
+}
+
+.choose .colors li {
+  height: inherit;
+  display: inline-block;
+  margin-right: 49px;
+  position: relative;
+}
+
+.choose .colors a {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  transition: 0.2s;
+}
+
+.choose .colors a.active {
+  width: 40px;
+  height: 40px;
+  margin-left: -8px;
+}
+
+.choose .colors .pink {
+  background-color: pink;
+}
+
+.choose .colors .green {
+  background-color: green;
+}
+
+.choose .buttons {
+  text-align: center;
+  padding: 39px 20px 0;
+  position: relative;
+}
+
+.choose .buttons a {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 5px;
+}
+
+.choose .buttons a:first-child {
+  width: 150px;
+}
+
+.choose .buttons a:nth-child(2) {
+  width: 140px;
+}
+
+.choose .buttons a:last-child {
+  width: 130px;
+  margin-right: 0;
+}
+
+.choose .buttons:before {
+  width: 480px;
+  height: 33px;
+  position: absolute;
+  content: " ";
+  background: url("../images/choose/shadow-2.png") no-repeat center;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .choose .price {
