@@ -19,6 +19,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'senticosansdtmedium_italic';
+  src: url("../fonts/senticosansdt-mediumitalic-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-mediumitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* NORMALIZE */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -137,6 +145,7 @@ td {
   clear: both;
 }
 
+/* BUTTONS */
 .btn-blue {
   display: block;
   font-size: 18px;
@@ -145,7 +154,6 @@ td {
   text-align: center;
   border-radius: 8px;
   background-color: #007ac3;
-  margin: 37px auto 0;
   transition: 0.5s;
 }
 
@@ -153,10 +161,122 @@ td {
   background-color: #22a1ed;
 }
 
+.btn-ghost {
+  display: block;
+  font-size: 18px;
+  color: #90a4ae;
+  font-family: "senticosansdtmedium";
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: solid 1px #cfd8dc;
+  transition: 0.5s;
+}
+
+.btn-ghost:hover {
+  background-color: #e2eaef;
+}
+
+[type="text"] {
+  border-radius: 6px;
+  background-color: #fff;
+  border: solid 1px #cfd8dc;
+}
+
+/* NAVIGATION */
+.navigation {
+  font-size: 0;
+  width: 255px;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navigation li {
+  display: inline-block;
+  position: relative;
+  margin-right: 57px;
+  height: inherit;
+}
+
+.navigation li:last-child {
+  margin-right: 0;
+}
+
+.navigation span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.navigation a {
+  display: block;
+  color: #b0bec5;
+  width: 32px;
+  height: 32px;
+  font-family: "senticosansdtmedium";
+  border-radius: 50%;
+  background-color: #fff;
+  border: solid 2px #b0bec5;
+  font-size: 18px;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: 0.2s;
+  /* Vedd le ha kell a gomb */
+  pointer-events: none;
+  cursor: default;
+  /* */
+}
+
+.navigation a.active {
+  border: 0;
+  margin-left: -4px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #0077c9;
+}
+
+.navigation a.done {
+  color: #0077c9;
+  border-color: #0077c9;
+}
+
+.navigation:before {
+  position: absolute;
+  content: " ";
+  left: 0;
+  right: 0;
+  top: 20px;
+  width: 250px;
+  height: 2px;
+  background-color: #b0bec5;
+}
+
+/* TYPOGRAPHY */
 h1 {
   font-size: 42px;
   font-family: "senticosansdtmedium";
   text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 24px;
+  color: #0077c9;
+  font-family: "senticosansdtmedium";
+}
+
+h3 {
+  font-family: "senticosansdtmedium";
+  font-size: 20px;
 }
 
 p {
@@ -165,6 +285,7 @@ p {
   text-align: center;
 }
 
+/* BASE */
 .container {
   position: relative;
   margin-right: auto;
@@ -192,14 +313,16 @@ p {
 body {
   background: url("../images/base/background.png") no-repeat center top;
   background-size: cover;
-  color: #555555;
+  color: #555;
   font-family: "senticosansdtregular";
 }
 
+/* HEADER */
 header {
   height: 95px;
   background: #0077c9 url("../images/header/header-background.jpg") no-repeat bottom right;
   position: relative;
+  margin-bottom: 70px;
 }
 
 header:after {
@@ -224,10 +347,11 @@ header .logo {
   background: url("../images/header/logo.png") no-repeat center;
 }
 
+/* INDEX */
 .index .pictures {
   width: 946px;
   height: 224px;
-  margin: 9px auto 0;
+  margin: -61px auto 0;
   position: relative;
   z-index: -1;
   background: url("../images/index/pictures.png") no-repeat center;
@@ -252,11 +376,436 @@ header .logo {
   width: 158px;
   height: 50px;
   line-height: 50px;
+  margin: 37px auto 0;
 }
 
-/*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
+.size .navigation {
+  margin-top: 19px;
+}
+
+.size .container > a {
+  margin: 37px auto 0;
+}
+
+.size h1 {
+  margin: 33px 0 15px;
+}
+
+.size p {
+  width: 660px;
+  margin: 0 auto;
+}
+
+.size .container > a {
+  width: 158px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.size .sizes {
+  width: 765px;
+  height: 268px;
+  margin: 45px auto;
+}
+
+.size .sizes > div {
+  float: left;
+  cursor: pointer;
+  height: 268px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.size .sizes > div:after {
+  position: absolute;
+  content: " ";
+  width: 212px;
+  height: 27px;
+  bottom: -22px;
+  background: url("../images/size/shadow.png") no-repeat center;
+  transition: 0.5s;
+}
+
+.size .sizes > div:last-child {
+  margin-right: 0;
+}
+
+.size .sizes > div:hover {
+  margin-top: -15px;
+}
+
+.size .sizes > div:hover:after {
+  bottom: -37px;
+}
+
+.size .sizes > div.active {
+  margin-top: -15px;
+}
+
+.size .sizes > div.active:after {
+  bottom: -37px;
+}
+
+.size .sizes > div.active .bubble {
+  background: url("../images/size/selected.png") no-repeat center;
+  color: #fff;
+}
+
+.size .sizes > div.active.small {
+  background: url("../images/size/house-1.png") no-repeat center bottom;
+}
+
+.size .sizes > div.active.medium {
+  background: url("../images/size/house-2.png") no-repeat center bottom;
+}
+
+.size .sizes > div.active.large {
+  background: url("../images/size/house-3.png") no-repeat center bottom;
+}
+
+.size .small {
+  width: 139px;
+  margin: 0 95px 0 55px;
+  background: url("../images/size/un-house-1.png") no-repeat center bottom;
+}
+
+.size .small:after {
+  left: -37px;
+}
+
+.size .small:hover {
+  background: url("../images/size/house-1.png") no-repeat center bottom;
+}
+
+.size .medium {
+  width: 190px;
+  margin-right: 50px;
+  background: url("../images/size/un-house-2.png") no-repeat center bottom;
+}
+
+.size .medium:after {
+  left: -21px;
+}
+
+.size .medium:hover {
+  background: url("../images/size/house-2.png") no-repeat center bottom;
+}
+
+.size .large {
+  width: 236px;
+  background: url("../images/size/un-house-3.png") no-repeat center bottom;
+}
+
+.size .large:before {
+  left: -19px;
+}
+
+.size .large:hover {
+  background: url("../images/size/house-3.png") no-repeat center bottom;
+}
+
+.size .bubble {
+  width: 136px;
+  height: 161px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-family: "senticosansdtmedium_italic";
+  line-height: 20px;
+  font-size: 32px;
+  text-align: center;
+  color: #0077c9;
+  background: url("../images/size/unselected.png") no-repeat center;
+  padding-top: 50px;
+  transition: 0.5s;
+}
+
+.size .bubble span {
+  font-size: 20px;
+  display: block;
+}
+
+.size .bubble sup {
+  font-size: 12px;
+}
+
+.area .navigation {
+  margin-top: 19px;
+}
+
+.area h1 {
+  margin: 33px 0 15px;
+}
+
+.area p {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.area h3 {
+  padding: 15px 0 0 15px;
+}
+
+.area .add {
+  padding: 30px;
+}
+
+.area .add-room {
+  float: left;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(35, 31, 32, 0.1);
+  border: solid 1px #fff;
+}
+
+.area .room {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 0 20px 20px 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(35, 31, 32, 0.1);
+  position: relative;
+}
+
+.area .room:nth-child(3n) {
+  margin-right: 0;
+}
+
+.area .svg {
+  width: 180px;
+  height: 160px;
+  background-color: red;
+  margin: 20px auto;
+}
+
+.area h2 {
+  text-align: center;
+  padding: 21px 0 30px;
+}
+
+.area footer {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  font-size: 18px;
+}
+
+.area footer span {
+  font-family: "senticosansdtbold";
+}
+
+.area footer span sup {
+  font-size: 12px;
+}
+
+.area .close {
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  background: url("../images/area/close.png") no-repeat center;
+  top: 20px;
+  right: 20px;
+}
+
+.area .tabs {
+  padding: 0 19px;
+}
+
+.area .tabs a {
+  float: left;
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #fff;
+  display: block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: solid 1px #cfd8dc;
+  font-size: 18px;
+  line-height: 50px;
+  color: #555;
+  text-align: center;
+  margin: 0 20px 20px 0;
+  transition: 0.5s;
+}
+
+.area .tabs a:nth-child(2n) {
+  margin-right: 0;
+}
+
+.area .tabs a.active {
+  color: #fff;
+  background-color: #007ac3;
+}
+
+.area .tabs a:hover {
+  color: #fff;
+  background-color: #007ac3;
+}
+
+.area label {
+  display: block;
+  cursor: pointer;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #eceff1;
+}
+
+.area label span {
+  font-size: 20px;
+  font-family: "senticosansdtmedium";
+  color: #0077c9;
+  padding-left: 5px;
+  line-height: 44px;
+}
+
+.area label span sup {
+  font-size: 12px;
+}
+
+.area [type="text"] {
+  width: 140px;
+  height: 44px;
+  padding: 10px;
+  margin: 18px 0 0 75px;
+}
+
+.area .buttons {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.area .buttons a {
+  width: 158px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 20px;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.area .buttons a:last-child {
+  margin-right: 0;
+}
+
+.choose .navigation {
+  margin-top: 19px;
+}
+
+.choose h1 {
+  margin: 33px 0 15px;
+}
+
+.choose p {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.choose .wrapper {
+  background-color: #eceff1;
+  margin-top: 20px;
+}
+
+.choose .selected-size {
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0 1px #cfd8dc;
+}
+
+.choose .selected-size span {
+  font-family: "senticosansdtbold";
+}
+
+.choose .selected-size span sup {
+  font-size: 12px;
+}
+
+.choose .left, .choose .right {
+  float: left;
+  margin-top: 20px;
+}
+
+.choose .left {
+  width: 50%;
+}
+
+.choose .right {
+  width: 480px;
+}
+
+.choose .price {
+  width: 500px;
+  height: 97px;
+  background: url("../images/choose/price.png") no-repeat center;
+}
+
+.choose .planned, .choose .real {
+  width: 49%;
+  float: left;
+  height: 76px;
+  line-height: 24px;
+  margin-top: 5px;
+}
+
+.choose .planned span, .choose .real span {
+  display: block;
+  font-size: 32px;
+  font-family: "senticosansdtmedium";
+}
+
+.choose .planned {
+  padding: 12px 0 0 40px;
+}
+
+.choose .real {
+  position: relative;
+  padding: 12px 0 0 20px;
+  color: #fff;
+  background-color: #007ac3;
+  border-radius: 0 38px 38px 0;
+  margin-left: 1%;
+}
+
+.choose .real:before {
+  position: absolute;
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent #ffffff;
+  top: 52%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
+.choose .svg {
+  position: relative;
+  width: 470px;
+  height: 418px;
+  background-color: red;
+  margin: 30px auto 0;
+}
+
+.choose .svg:after {
+  position: absolute;
+  content: " ";
+  width: 439px;
+  height: 28px;
+  background: url("../images/choose/shadow.png") no-repeat center;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  margin: 0 auto;
+}

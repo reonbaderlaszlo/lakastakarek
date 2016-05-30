@@ -26,6 +26,16 @@
 
 }
 
+@font-face {
+    font-family: 'senticosansdtmedium_italic';
+    src: url('../fonts/senticosansdt-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/senticosansdt-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 $sentico-regular: 'senticosansdtregular';
 $sentico-medium: 'senticosansdtmedium';
 $sentico-bold: 'senticosansdtbold';
+$sentico-medium-italic: 'senticosansdtmedium_italic';

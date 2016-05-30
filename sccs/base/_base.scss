@@ -1,3 +1,4 @@
+/* BASE */
 .container {
     position: relative;
     margin-right: auto;
@@ -27,6 +28,6 @@
 body{
     background: url('../images/base/background.png') no-repeat center top;
     background-size: cover;
-    color: #555555;
+    color: #555;
     font-family: $sentico-regular;
 }

@@ -1,3 +1,4 @@
+/* BUTTONS */
 .btn-blue {
     display: block;
     font-size: 18px;
@@ -6,11 +7,27 @@
     text-align: center;
     border-radius: 8px;
     background-color: #007ac3;
-    margin: 37px auto 0;
 
     @include transition-all;
 
     &:hover {
         background-color: #22a1ed;
+    }
+}
+.btn-ghost{
+    display: block;
+    font-size: 18px;
+    color: #90a4ae;
+    font-family: $sentico-medium;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    border: solid 1px #cfd8dc;
+
+    @include transition-all;
+
+    &:hover {
+        background-color: #e2eaef;
     }
 }

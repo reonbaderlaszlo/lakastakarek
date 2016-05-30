@@ -1,0 +1,70 @@
+/* NAVIGATION */
+.navigation {
+    font-size: 0;
+    width: 255px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+
+    li {
+        display: inline-block;
+        position: relative;
+        margin-right: 57px;
+		height: inherit;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    a {
+        display: block;
+        color: #b0bec5;
+        width: 32px;
+        height: 32px;
+        font-family: $sentico-medium;
+        border-radius: 50%;
+        background-color: #fff;
+        border: solid 2px #b0bec5;
+        font-size: 18px;
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        transition: 0.2s;
+        /* Vedd le ha kell a gomb */
+        pointer-events: none;
+        cursor: default;
+        /* */
+
+        &.active {
+            border: 0;
+            margin-left: -4px;
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            background-color: #0077c9;
+        }
+
+        &.done{
+        	color: #0077c9;
+        	border-color: #0077c9;
+        }
+    }
+
+    &:before {
+        position: absolute;
+        content: " ";
+        left: 0;
+        right: 0;
+        top: 20px;
+        width: 250px;
+        height: 2px;
+        background-color: #b0bec5;
+    }
+}
