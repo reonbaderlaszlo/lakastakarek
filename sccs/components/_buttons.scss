@@ -1,0 +1,16 @@
+.btn-blue {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    font-family: $sentico-medium;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #007ac3;
+    margin: 37px auto 0;
+
+    @include transition-all;
+
+    &:hover {
+        background-color: #22a1ed;
+    }
+}

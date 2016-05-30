@@ -1,0 +1,27 @@
+header {
+    height: 95px;
+    background: #0077c9 url("../images/header/header-background.jpg") no-repeat bottom right;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        height: 70px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 95px;
+        content: " ";
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(35, 31, 32, 0.1);
+    }
+
+    .logo {
+        width: 231px;
+        height: 149px;
+        display: block;
+        position: relative;
+        z-index: 1;
+        margin-top: 16px;
+        background: url("../images/header/logo.png") no-repeat center;
+    }
+}

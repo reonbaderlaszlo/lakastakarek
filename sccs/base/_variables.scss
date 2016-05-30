@@ -1,1 +1,31 @@
 // Fonts
+@font-face {
+    font-family: 'senticosansdtregular';
+    src: url('../fonts/senticosansdt-regular-webfont.woff2') format('woff2'),
+         url('../fonts/senticosansdt-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'senticosansdtmedium';
+    src: url('../fonts/senticosansdt-medium-webfont.woff2') format('woff2'),
+         url('../fonts/senticosansdt-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'senticosansdtbold';
+    src: url('../fonts/senticosansdt-bold-webfont.woff2') format('woff2'),
+         url('../fonts/senticosansdt-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$sentico-regular: 'senticosansdtregular';
+$sentico-medium: 'senticosansdtmedium';
+$sentico-bold: 'senticosansdtbold';

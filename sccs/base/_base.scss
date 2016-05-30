@@ -2,30 +2,9 @@
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    width: 1000px;
 
     @extend .clear;
-}
-
-@media (min-width: 48em) {
-    .container {
-        width: 744px;
-    }
-}
-
-@media (min-width: 64em) {
-    .container {
-        width: 960px;
-    }
-}
-
-@media (min-width: 80em) {
-    .container {
-        width: 1200px;
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem;
-    }
 }
 
 .browserupgrade {
@@ -43,4 +22,11 @@
         text-decoration: underline;
         color: #a52a2a;
     }
+}
+
+body{
+    background: url('../images/base/background.png') no-repeat center top;
+    background-size: cover;
+    color: #555555;
+    font-family: $sentico-regular;
 }

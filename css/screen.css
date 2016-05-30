@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'senticosansdtregular';
+  src: url("../fonts/senticosansdt-regular-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'senticosansdtmedium';
+  src: url("../fonts/senticosansdt-medium-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'senticosansdtbold';
+  src: url("../fonts/senticosansdt-bold-webfont.woff2") format("woff2"), url("../fonts/senticosansdt-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+article, figcaption, figure, footer, header, aside, main, nav, section {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+  background-color: transparent;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+}
+
+img {
+  border-style: none;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+input {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+button, input, select, textarea {
+  margin: 0;
+  font: inherit;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, [type="submit"] {
+  -webkit-appearance: button;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+}
+
+button::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+textarea {
+  overflow: auto;
+}
+
+button, select {
+  text-transform: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+.clear:before, .container:before, .clear:after, .container:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after, .container:after {
+  clear: both;
+}
+
+.btn-blue {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  font-family: "senticosansdtmedium";
+  text-align: center;
+  border-radius: 8px;
+  background-color: #007ac3;
+  margin: 37px auto 0;
+  transition: 0.5s;
+}
+
+.btn-blue:hover {
+  background-color: #22a1ed;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: "senticosansdtmedium";
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1000px;
+}
+
+.browserupgrade {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #fff;
+  z-index: 9999;
+  padding: 50px;
+}
+
+.browserupgrade a {
+  text-decoration: underline;
+  color: #a52a2a;
+}
+
+body {
+  background: url("../images/base/background.png") no-repeat center top;
+  background-size: cover;
+  color: #555555;
+  font-family: "senticosansdtregular";
+}
+
+header {
+  height: 95px;
+  background: #0077c9 url("../images/header/header-background.jpg") no-repeat bottom right;
+  position: relative;
+}
+
+header:after {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 95px;
+  content: " ";
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(35, 31, 32, 0.1);
+}
+
+header .logo {
+  width: 231px;
+  height: 149px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-top: 16px;
+  background: url("../images/header/logo.png") no-repeat center;
+}
+
+.index .pictures {
+  width: 946px;
+  height: 224px;
+  margin: 9px auto 0;
+  position: relative;
+  z-index: -1;
+  background: url("../images/index/pictures.png") no-repeat center;
+}
+
+.index h1 {
+  margin-top: -15px;
+  padding-bottom: 15px;
+}
+
+.index .bold {
+  font-family: "senticosansdtbold";
+  padding-top: 20px;
+}
+
+.index p {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.index a {
+  width: 158px;
+  height: 50px;
+  line-height: 50px;
+}
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
