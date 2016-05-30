@@ -1029,3 +1029,14 @@ header .logo {
   bottom: -30px;
   margin: 0 auto;
 }
+
+/* CALC */
+.calc .navigation {
+  margin: 19px auto 21px;
+}
+
+.calc .wrapper {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(35, 31, 32, 0.1);
+  min-height: 500px;
+}
