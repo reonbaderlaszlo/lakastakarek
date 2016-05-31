@@ -56,34 +56,35 @@
                 &:after {
                     bottom: -37px;
                 }
-            }            
+            }
 
             @include transition-all;
         }
+
         .active {
-                margin-top: -15px;
+            margin-top: -15px;
 
-                &:after {
-                    bottom: -37px;
-                }
-
-                .bubble {
-                    background: url("../images/size/selected.png") no-repeat center;
-                    color: #fff;
-                }
-
-                &.small {
-                    background: url("../images/size/house-1.png") no-repeat center bottom;
-                }
-
-                &.medium {
-                    background: url("../images/size/house-2.png") no-repeat center bottom;
-                }
-
-                &.large {
-                    background: url("../images/size/house-3.png") no-repeat center bottom;
-                }
+            &:after {
+                bottom: -37px;
             }
+
+            .bubble {
+                background: url("../images/size/selected.png") no-repeat center;
+                color: #fff;
+            }
+
+            &.small {
+                background: url("../images/size/house-1.png") no-repeat center bottom;
+            }
+
+            &.medium {
+                background: url("../images/size/house-2.png") no-repeat center bottom;
+            }
+
+            &.large {
+                background: url("../images/size/house-3.png") no-repeat center bottom;
+            }
+        }
     }
 
     .small {
@@ -155,7 +156,7 @@
     }
 }
 
-/* AREA */ 
+/* AREA */
 
 .area {
     .navigation {
@@ -524,25 +525,25 @@
             height: inherit;
             display: inline-block;
             margin-right: 49px;
-            position: relative;            
+            position: relative;
         }
 
         a {
-                display: block;
-                position: absolute;
-                border-radius: 50%;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 24px;
-                height: 24px;
-                transition: 0.2s;
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            transition: 0.2s;
 
-                &.active {
-                    width: 40px;
-                    height: 40px;
-                    margin-left: -8px;
-                }
+            &.active {
+                width: 40px;
+                height: 40px;
+                margin-left: -8px;
             }
+        }
 
         .pink {
             background-color: pink;
@@ -661,13 +662,252 @@
 
 /* CALC */
 
-.calc{
+.calc {
+    .navigation {
+        margin: 19px auto 21px;
+    }
+
+    .wrapper {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(35, 31, 32, 0.1);
+        padding-bottom: 57px;
+        margin-bottom: 55px;
+    }
+
+    .top {
+        height: 90px;
+        box-shadow: 0 1px #cfd8dc;
+        padding: 0 40px;
+    }
+
+    h1 {
+        float: left;
+        padding-top: 32px;
+    }
+
+    .size {
+        float: right;
+        font-size: 18px;
+        padding-top: 50px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    sup {
+        font-size: 12px;
+    }
+
+    .room {
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+    table {
+        width: 100%;
+        padding: 0 40px;
+        margin-top: 1px;
+
+        a {
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            color: #0077c9;
+            float: right;
+        }
+
+        span {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            border: solid 2px #cfd8dc;
+            display: block;
+            float: left;
+        }
+
+        .selected-color {
+            display: block;
+            float: left;
+            line-height: 40px;
+            padding-left: 20px;
+        }
+
+        .white {
+            background-color: #fff;
+        }
+    }
+
+    td {
+        font-family: $sentico-medium;
+
+        &:first-child, &:last-child {
+            padding: 0 40px;
+        }
+
+        &:first-child {
+            width: 260px;
+        }
+
+        &:nth-child(2) {
+            width: 200px;
+            font-family: $sentico-regular;
+        }
+
+        &:nth-child(3) {
+            width: 268px;
+            font-family: $sentico-bold;
+            font-size: 22px;
+            text-align: right;
+            padding-right: 18px;
+        }
+
+        &:last-child {
+            width: 192px;
+        }
+
+        height: 89px;
+        box-shadow: 0 1px #cfd8dc;
+        font-size: 18px;
+    }
+
+    tr {
+        &:first-child td {
+            width: 100%;
+            box-shadow: 0 1px #cfd8dc;
+            height: 50px;
+            background-color: #eceff1;
+            font-size: 18px;
+            color: #0077c9;
+        }
+    }
+
+    .prices {
+        float: right;
+        padding-right: 40px;
+        margin-top: 40px;
+
+        span {
+            display: block;
+            font-size: 32px;
+            font-family: $sentico-bold;
+        }
+    }
+
+    .real, .planned {
+        float: left;
+    }
+
+    .buttons {
+        float: right;
+        margin-top: 29px;
+        padding-right: 40px;
+
+        a {
+            width: 227px;
+            height: 57px;
+            display: block;
+            float: left;
+
+            &:first-child {
+                line-height: 22px;
+                padding: 7px 10px 0;
+                margin-right: 12px;
+            }
+
+            &:last-child {
+                line-height: 57px;
+            }
+        }
+    }
+
+    .real {
+        span {
+            color: #0077c9;
+        }
+    }
+
+    .planned {
+        position: relative;
+        margin-right: 52px;
+
+        &:after {
+            position: absolute;
+            content: " ";
+            width: 17px;
+            height: 19px;
+            background: url("../images/calc/caret.png") no-repeat center;
+            top: 28px;
+            right: -38px;
+        }
+    }
+}
+/* CONTACT */
+.contact{
     .navigation{
         margin: 19px auto 21px;
     }
     .wrapper{
+        margin: 0 auto 121px;
+        width: 520px;
+        min-height: 540px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(35,31,32,.1);
-        min-height: 500px;
+    }
+    h1{
+        padding: 41px 0 12px;
+    }
+    p{
+        padding-bottom: 25px;
+    }
+    form{
+        width: 320px;
+        margin: 0 auto;
+    }
+    label{
+        font-size: 18px;
+        line-height: 26px;
+        color: #007ac3;
+        padding-left: 8px;
+    }
+    [type="text"], [type="email"]{
+        width: 320px;
+        height: 44px;
+        margin-bottom: 18px;
+        padding: 10px;
+    }
+    .wrong{
+        border: 1px solid red;
+    }
+    .error{
+        margin-bottom: 12px;
+        color: red;
+    }
+    .buttons{
+        margin-top: 21px;
+        padding-bottom: 54px;
+        a, [type="submit"]{
+        width: 158px;
+        height: 50px;
+        display: inline-block;
+        line-height: 50px;
+    }
+    }
+    
+}
+/* THANKS */
+.thanks{
+    h1{
+        padding: 56px 0 10px;
+
+    }
+    p{
+        padding-bottom: 66px;
+    }
+    a{
+        width: 186px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 auto;
     }
 }

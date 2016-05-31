@@ -1,5 +1,5 @@
 <?php echo $header; ?>
-<main class="calc" role="main">
+<main class="calc">
 <div class="container">
 	<ul class="navigation">
 		<li><a class="done" href="#"><span>1</span></a></li>
@@ -9,8 +9,56 @@
 		<li><a href="#"><span>5</span></a></li>
 	</ul>
 	<div class="wrapper">
-		<h1>Kalkuláció</h1>
-		<div class="size">Lakásméret: <span>45-65 m<sup>2</sup></span><div class="room">Helyiség: <span>Konyha</span></div></div>
+		<div class="top">
+			<h1>Kalkuláció</h1>
+			<div class="size">Lakásméret: <span>45-65 m<sup>2</sup></span><div class="room">Helyiség: <span>Konyha</span></div></div>
+		</div>
+		<table class="room-table">
+			<tr>
+				<td colspan="4">Helyiség</td>
+			</tr>
+			<tr>
+				<td>Falszín</td>
+				<td><span class="white"></span><div class="selected-color">Fehér</div></td>
+				<td>50.000 Ft</td>
+				<td><a href="#" class="btn-ghost">Módosítás</a></td>
+			</tr>
+			<tr>
+				<td>Fűtés</td>
+				<td>Radiátor</td>
+				<td>180.000 Ft</td>
+				<td><a href="#" class="btn-ghost">Módosítás</a></td>
+			</tr>
+			<tr>
+				<td>Padló</td>
+				<td>Laminált parketta, 42 m<sup>2</sup></td>
+				<td>260.000 Ft</td>
+				<td><a href="#" class="btn-ghost">Módosítás</a></td>
+			</tr>
+		</table>
+		<table class="machines-table">
+			<tr>
+				<td colspan="4">Helyiség</td>
+			</tr>
+			<tr>
+				<td>Beépített villanysütő</td>
+				<td>1 db</td>
+				<td>140.000 Ft</td>
+				<td><a href="#" class="btn-ghost">Módosítás</a></td>
+			</tr>
+		</table>
+		<div class="clear">
+			<div class="prices">
+			<div class="planned">Tervezett ár:<span>2 450 000 Ft</span></div>
+			<div class="real">Állami támogatás:<span>1 230 000 Ft</span></div>
+		</div>
+		</div>
+		<div class="clear">
+			<div class="buttons">
+			<a href="/lakastakarek/elerhetoseg" class="btn-blue">Hívjanak vissza, és elküldöm emailben</a>
+			<a href="/lakastakarek/elerhetoseg" class="btn-blue">Elküldöm e-mailben</a>
+		</div>
+		</div>
 	</div>
 </div>
 </main>

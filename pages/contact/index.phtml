@@ -1,0 +1,30 @@
+<?php echo $header; ?>
+<main class="contact">
+<div class="container">
+	<ul class="navigation">
+		<li><a class="done" href="#"><span>1</span></a></li>
+		<li><a class="done" href="#"><span>2</span></a></li>
+		<li><a class="done" href="#"><span>3</span></a></li>
+		<li><a class="done" href="#"><span>4</span></a></li>
+		<li><a class="active" href="#"><span>5</span></a></li>
+	</ul>
+	<div class="wrapper">
+		<h1>Elérhetőség</h1>
+		<p>Adja meg az elérhetőségeit, mert ezen fogjuk keresni.</p>
+		<form method="post">
+			<label for="name">Név:</label>
+			<input class="wrong" id="name" type="text">
+			<div class="error">A név kitöltése kötelező!</div>
+			<label for="email">E-mail:</label>
+			<input id="email" type="email">
+			<label for="phone">Telefonszám:</label>
+			<input id="phone" type="text">
+			<div class="buttons">
+				<a href="#" class="btn-ghost">Vissza</a>
+				<input class="btn-blue" type="submit" value="Tovább">
+			</div>
+		</form>
+	</div>
+</div>
+</main>
+<?php echo $footer; ?>
